@@ -117,7 +117,7 @@ always @(posedge clk1) 	//WB STAGE
 	end
 endmodule			
 
-module test_mips32; //ADDING THREE NOS STORED IN PROCESSOR REGISTERS Q.
+module test_mips32; //ADDING THREE NOS 10,20,25 STORED IN PROCESSOR REGISTER AND STORE THE SUM IN R4, R5
  reg clk1, clk2;
  integer k;
  pipe_MIPS32 mips(clk1, clk2);
@@ -158,7 +158,7 @@ module test_mips32; //ADDING THREE NOS STORED IN PROCESSOR REGISTERS Q.
 	end
 endmodule
 
-module test2_mips32; //ADDING THREE NOS STORED IN PROCESSOR REGISTERS Q.
+module test2_mips32; //LOAD A WORD STORED IN MEM. LOC. 120, ADD 45 TO IT AND STORE THE RESULT IN MEM. LOC. 121
  reg clk1, clk2;
  integer k;
  pipe_MIPS32 mips(clk1, clk2);
@@ -197,7 +197,7 @@ mips.PC = 0;
 	end
 endmodule
 
-module test3_mips32; //FACTORIAL OF A NO N STORED AT MEM LOC 200 Q.
+module test3_mips32; //FACTORIAL OF A NO N STORED AT MEM LOC 200 AND STORE THE RESULT IN MEM. LOC. 198
  reg clk1, clk2;
  integer k;
  pipe_MIPS32 mips(clk1, clk2);
